@@ -9,23 +9,41 @@
 /* Begin PBXBuildFile section */
 		CE5A197228F977B70023FBF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A197128F977B70023FBF0 /* AppDelegate.swift */; };
 		CE5A197428F977B70023FBF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A197328F977B70023FBF0 /* SceneDelegate.swift */; };
-		CE5A197628F977B70023FBF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A197528F977B70023FBF0 /* ViewController.swift */; };
-		CE5A197928F977B70023FBF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5A197728F977B70023FBF0 /* Main.storyboard */; };
 		CE5A197C28F977B70023FBF0 /* BirthdayCalendar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE5A197A28F977B70023FBF0 /* BirthdayCalendar.xcdatamodeld */; };
 		CE5A197E28F977BA0023FBF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5A197D28F977BA0023FBF0 /* Assets.xcassets */; };
 		CE5A198128F977BA0023FBF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5A197F28F977BA0023FBF0 /* LaunchScreen.storyboard */; };
+		CE5A198F28FEE2E00023FBF0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A198E28FEE2E00023FBF0 /* Person.swift */; };
+		CE5A199128FEE3390023FBF0 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A199028FEE3390023FBF0 /* CustomTextField.swift */; };
+		CE5A199328FEE3990023FBF0 /* BDayListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A199228FEE3990023FBF0 /* BDayListTableViewCell.swift */; };
+		CE5A199528FEE45E0023FBF0 /* BDayListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A199428FEE45E0023FBF0 /* BDayListController.swift */; };
+		CE5A199728FEE5230023FBF0 /* AddNewBDayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A199628FEE5230023FBF0 /* AddNewBDayController.swift */; };
+		CE5A199928FEE5D40023FBF0 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A199828FEE5D40023FBF0 /* CoreDataManager.swift */; };
+		CE5A199B28FEE6920023FBF0 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A199A28FEE6920023FBF0 /* AppColor.swift */; };
+		CE5A199D28FEE6AE0023FBF0 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A199C28FEE6AE0023FBF0 /* UIView+.swift */; };
+		CE5A199F28FEE6DB0023FBF0 /* Calendar+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A199E28FEE6DB0023FBF0 /* Calendar+.swift */; };
+		CE5A19A128FEE7040023FBF0 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A19A028FEE7040023FBF0 /* UITextField+.swift */; };
+		CE5A19A328FEE7AF0023FBF0 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A19A228FEE7AF0023FBF0 /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE5A196E28F977B70023FBF0 /* BirthdayCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirthdayCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5A197128F977B70023FBF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE5A197328F977B70023FBF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE5A197528F977B70023FBF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE5A197828F977B70023FBF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE5A197B28F977B70023FBF0 /* BirthdayCalendar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BirthdayCalendar.xcdatamodel; sourceTree = "<group>"; };
 		CE5A197D28F977BA0023FBF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE5A198028F977BA0023FBF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE5A198228F977BA0023FBF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5A198E28FEE2E00023FBF0 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		CE5A199028FEE3390023FBF0 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		CE5A199228FEE3990023FBF0 /* BDayListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDayListTableViewCell.swift; sourceTree = "<group>"; };
+		CE5A199428FEE45E0023FBF0 /* BDayListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDayListController.swift; sourceTree = "<group>"; };
+		CE5A199628FEE5230023FBF0 /* AddNewBDayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBDayController.swift; sourceTree = "<group>"; };
+		CE5A199828FEE5D40023FBF0 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		CE5A199A28FEE6920023FBF0 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		CE5A199C28FEE6AE0023FBF0 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		CE5A199E28FEE6DB0023FBF0 /* Calendar+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+.swift"; sourceTree = "<group>"; };
+		CE5A19A028FEE7040023FBF0 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		CE5A19A228FEE7AF0023FBF0 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +76,81 @@
 		CE5A197028F977B70023FBF0 /* BirthdayCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				CE5A198828FEE25D0023FBF0 /* Model */,
+				CE5A198928FEE2680023FBF0 /* View */,
+				CE5A198A28FEE2730023FBF0 /* Controller */,
+				CE5A198B28FEE2840023FBF0 /* Supporting */,
 				CE5A197128F977B70023FBF0 /* AppDelegate.swift */,
 				CE5A197328F977B70023FBF0 /* SceneDelegate.swift */,
-				CE5A197528F977B70023FBF0 /* ViewController.swift */,
-				CE5A197728F977B70023FBF0 /* Main.storyboard */,
 				CE5A197D28F977BA0023FBF0 /* Assets.xcassets */,
 				CE5A197F28F977BA0023FBF0 /* LaunchScreen.storyboard */,
 				CE5A198228F977BA0023FBF0 /* Info.plist */,
-				CE5A197A28F977B70023FBF0 /* BirthdayCalendar.xcdatamodeld */,
 			);
 			path = BirthdayCalendar;
+			sourceTree = "<group>";
+		};
+		CE5A198828FEE25D0023FBF0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE5A198E28FEE2E00023FBF0 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE5A198928FEE2680023FBF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE5A199028FEE3390023FBF0 /* CustomTextField.swift */,
+				CE5A199228FEE3990023FBF0 /* BDayListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE5A198A28FEE2730023FBF0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE5A199428FEE45E0023FBF0 /* BDayListController.swift */,
+				CE5A199628FEE5230023FBF0 /* AddNewBDayController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE5A198B28FEE2840023FBF0 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				CE5A198C28FEE2A20023FBF0 /* CoreDataManager */,
+				CE5A19A428FEF3220023FBF0 /* NotificationManager */,
+				CE5A198D28FEE2B90023FBF0 /* Extensions */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		CE5A198C28FEE2A20023FBF0 /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE5A199828FEE5D40023FBF0 /* CoreDataManager.swift */,
+				CE5A197A28F977B70023FBF0 /* BirthdayCalendar.xcdatamodeld */,
+			);
+			path = CoreDataManager;
+			sourceTree = "<group>";
+		};
+		CE5A198D28FEE2B90023FBF0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE5A199A28FEE6920023FBF0 /* AppColor.swift */,
+				CE5A199C28FEE6AE0023FBF0 /* UIView+.swift */,
+				CE5A199E28FEE6DB0023FBF0 /* Calendar+.swift */,
+				CE5A19A028FEE7040023FBF0 /* UITextField+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CE5A19A428FEF3220023FBF0 /* NotificationManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE5A19A228FEE7AF0023FBF0 /* NotificationManager.swift */,
+			);
+			path = NotificationManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +213,6 @@
 			files = (
 				CE5A198128F977BA0023FBF0 /* LaunchScreen.storyboard in Resources */,
 				CE5A197E28F977BA0023FBF0 /* Assets.xcassets in Resources */,
-				CE5A197928F977B70023FBF0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +223,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5A197628F977B70023FBF0 /* ViewController.swift in Sources */,
+				CE5A199528FEE45E0023FBF0 /* BDayListController.swift in Sources */,
+				CE5A19A128FEE7040023FBF0 /* UITextField+.swift in Sources */,
+				CE5A199B28FEE6920023FBF0 /* AppColor.swift in Sources */,
+				CE5A198F28FEE2E00023FBF0 /* Person.swift in Sources */,
+				CE5A19A328FEE7AF0023FBF0 /* NotificationManager.swift in Sources */,
+				CE5A199328FEE3990023FBF0 /* BDayListTableViewCell.swift in Sources */,
+				CE5A199128FEE3390023FBF0 /* CustomTextField.swift in Sources */,
+				CE5A199728FEE5230023FBF0 /* AddNewBDayController.swift in Sources */,
 				CE5A197228F977B70023FBF0 /* AppDelegate.swift in Sources */,
+				CE5A199928FEE5D40023FBF0 /* CoreDataManager.swift in Sources */,
+				CE5A199D28FEE6AE0023FBF0 /* UIView+.swift in Sources */,
 				CE5A197C28F977B70023FBF0 /* BirthdayCalendar.xcdatamodeld in Sources */,
 				CE5A197428F977B70023FBF0 /* SceneDelegate.swift in Sources */,
+				CE5A199F28FEE6DB0023FBF0 /* Calendar+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CE5A197728F977B70023FBF0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE5A197828F977B70023FBF0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE5A197F28F977BA0023FBF0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -298,7 +382,6 @@
 				INFOPLIST_FILE = BirthdayCalendar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -326,7 +409,6 @@
 				INFOPLIST_FILE = BirthdayCalendar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
