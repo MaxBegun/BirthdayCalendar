@@ -1,8 +1,6 @@
 import UIKit
 
 final class BDayListController: UIViewController {
-    // MARK: - Properties
-    // MARK: Public
     // MARK: Private
     private let bDayListTableView = UITableView()
     private var bDayList = [Person]() {
@@ -10,20 +8,17 @@ final class BDayListController: UIViewController {
             bDayListTableView.reloadData()
         }
     }
-    private let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
-    private let dateFormatter = DateFormatter()
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         addSubviews()
         setUpUI()
-        setUpDateFormatter()
         addConstraints()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        guard let persons = CoreDataManager.instance.getPerson() else {return}
+        guard let persons = CoreDataManager.instance.getPersons() else { return }
         bDayList = persons
     }
     // MARK: - Setups
@@ -46,11 +41,6 @@ final class BDayListController: UIViewController {
         bDayListTableView.backgroundColor = .clear
         bDayListTableView.separatorColor = .clear
         bDayListTableView.register(BDayListTableViewCell.self, forCellReuseIdentifier: "BDayListTableViewCell")
-    }
-    
-    private func setUpDateFormatter() {
-        dateFormatter.dateStyle = .medium
-        dateFormatter.dateFormat = "dd MMM"
     }
     
     private func addConstraints() {
@@ -102,11 +92,7 @@ extension BDayListController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "BDayListTableViewCell", for: indexPath) as?
             BDayListTableViewCell {
-            let person = bDayList[indexPath.section]
-            cell.nameLabel.text = person.name
-            cell.phoneNumberLabel.text = person.phoneNumber
-            cell.birthDateLabel.text = dateFormatter.string(from: person.birthDate)
-            cell.willTurnsLabel.text = String(calendar.numberOfYearsTurns(person.birthDate))
+            cell.setUpCell(bDayList[indexPath.section])
             
             return cell
         }

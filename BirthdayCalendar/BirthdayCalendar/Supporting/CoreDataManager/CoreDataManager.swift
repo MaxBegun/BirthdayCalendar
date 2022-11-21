@@ -5,12 +5,11 @@ final class CoreDataManager {
     static let instance = CoreDataManager()
     
     func savePerson(_ user: Person) {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return}
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         
         let managedContext = appDelegate.persistentContainer.viewContext
         
-        let entity = NSEntityDescription.entity(forEntityName: "PersonEntity", in: managedContext)!
+        guard let entity = NSEntityDescription.entity(forEntityName: "PersonEntity", in: managedContext) else { return }
         
         let person = NSManagedObject(entity: entity, insertInto: managedContext)
         
@@ -26,9 +25,8 @@ final class CoreDataManager {
         }
     }
     
-    func getPerson() -> [Person]? {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return nil}
+    func getPersons() -> [Person]? {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return nil }
         
         let managedContext = appDelegate.persistentContainer.viewContext
 

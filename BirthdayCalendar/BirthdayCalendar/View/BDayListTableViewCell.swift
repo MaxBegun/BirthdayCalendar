@@ -1,20 +1,21 @@
 import UIKit
 
 final class BDayListTableViewCell: UITableViewCell {
-    // MARK: - Properties
-    // MARK: Public
-    public let nameLabel = UILabel()
-    public let phoneNumberLabel = UILabel()
-    public let birthDateLabel = UILabel()
-    public let willTurnsLabel = UILabel()
-    public let yearsOldLabel = UILabel()
     // MARK: Private
+    private let nameLabel = UILabel()
+    private let phoneNumberLabel = UILabel()
+    private let birthDateLabel = UILabel()
+    private let willTurnsLabel = UILabel()
+    private let yearsOldLabel = UILabel()
+    private let calendar = Calendar(identifier: .gregorian)
+    private let dateFormatter = DateFormatter()
     // MARK: - Lifecycle
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         addSubviews()
         setUpUI()
         addConstraints()
+        setUpDateFormatter()
     }
     // MARK: - Setups
     private func addSubviews() {
@@ -88,6 +89,18 @@ final class BDayListTableViewCell: UITableViewCell {
         yearsOldLabel.trailingAnchor.constraint(equalTo: willTurnsLabel.leadingAnchor).isActive = true
         yearsOldLabel.widthAnchor.constraint(equalToConstant: 80).isActive = true
         yearsOldLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
+    }
+    
+    private func setUpDateFormatter() {
+        dateFormatter.dateStyle = .medium
+        dateFormatter.dateFormat = "dd MMM"
+    }
+    //MARK: - API
+    func setUpCell(_ model: Person) {
+        nameLabel.text = model.name
+        phoneNumberLabel.text = model.phoneNumber
+        birthDateLabel.text = dateFormatter.string(from: model.birthDate)
+        willTurnsLabel.text = String(calendar.numberOfYearsTurns(model.birthDate))
     }
     
     required init?(coder: NSCoder) {

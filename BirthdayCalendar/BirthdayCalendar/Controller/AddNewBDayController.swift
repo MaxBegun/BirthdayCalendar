@@ -1,8 +1,6 @@
 import UIKit
 
 final class AddNewBDayController: UIViewController {
-    // MARK: - Properties
-    // MARK: Public
     // MARK: Private
     private let enterInfoLabel = UILabel()
     private let nameTextField = CustomTextField()
@@ -18,7 +16,13 @@ final class AddNewBDayController: UIViewController {
     }
     // MARK: - Setups
     private func addSubviews() {
-        view.addSubviews(enterInfoLabel, nameTextField, phoneNumTextField, birthDateTextField, saveButton)
+        view.addSubviews(
+            enterInfoLabel,
+            nameTextField,
+            phoneNumTextField,
+            birthDateTextField,
+            saveButton
+        )
     }
     
     private func setUpUI() {
@@ -34,12 +38,10 @@ final class AddNewBDayController: UIViewController {
         //nameTextField
         nameTextField.setPlaceholder("Name")
         nameTextField.setKeyboardType(.namePhonePad)
-        nameTextField.isAutocorrectionEnabled = false
         nameTextField.setImageView("person")
         //phoneNumTextField
         phoneNumTextField.setPlaceholder("Phone number")
         phoneNumTextField.setKeyboardType(.phonePad)
-        phoneNumTextField.isAutocorrectionEnabled = false
         phoneNumTextField.setImageView("phone")
         //dateTextField
         birthDateTextField.setPlaceholder("Birth date")
@@ -47,7 +49,6 @@ final class AddNewBDayController: UIViewController {
         birthDateTextField.addInputView()
         //saveButton
         saveButton.setTitle("SAVE", for: .normal)
-        //saveButton.setTitleColor(UIColor.init(white: 1, alpha: 0.3), for: .highlighted)
         saveButton.backgroundColor = AppColor.itemColor
         saveButton.layer.cornerRadius = 13
         saveButton.addTarget(self, action: #selector(saveButtonDidTapped), for: .touchUpInside)

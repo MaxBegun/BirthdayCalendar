@@ -1,27 +1,23 @@
 import UIKit
 
 final class CustomTextField: UIView {
-    // MARK: - Properties
     // MARK: Public
     var birthDate = Date()
     let mainTextField = UITextField()
     var text: String {
-        get {mainTextField.text ?? ""}
-        set {mainTextField.text = newValue}
-    }
-    var isAutocorrectionEnabled: Bool = true {
-        didSet {
-            mainTextField.autocorrectionType = isAutocorrectionEnabled ? .yes : .no
-        }
+        get { mainTextField.text ?? "" }
+        set { mainTextField.text = newValue }
     }
     // MARK: Private
     private let imageView = UIImageView()
+    private let dateFormatter = DateFormatter()
     // MARK: - Lifecycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubviews()
         setupUI()
         addConstraints()
+        setDateFormatter()
     }
     
     @available(*, unavailable)
@@ -51,6 +47,11 @@ final class CustomTextField: UIView {
         mainTextField.setInputView(target: self, selector: #selector(saveDateTapped))
     }
     
+    private func setDateFormatter() {
+        dateFormatter.dateStyle = .medium
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+    }
+    
     private func addSubviews() {
         addSubviews(mainTextField, imageView)
     }
@@ -77,9 +78,6 @@ final class CustomTextField: UIView {
     
     @objc private func saveDateTapped() {
         if let datePicker = mainTextField.inputView as? UIDatePicker {
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateStyle = .medium
-            dateFormatter.dateFormat = "yyyy-MM-dd"
             mainTextField.text = dateFormatter.string(from: datePicker.date)
             birthDate = datePicker.date
         }
