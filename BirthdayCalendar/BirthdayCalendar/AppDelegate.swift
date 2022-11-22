@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  BirthdayCalendar
-//
-//  Created by Maksim Begun on 14.10.2022.
-//
-
 import UIKit
 import CoreData
 
