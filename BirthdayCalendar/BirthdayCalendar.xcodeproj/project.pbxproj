@@ -23,6 +23,7 @@
 		CE5A199F28FEE6DB0023FBF0 /* Calendar+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A199E28FEE6DB0023FBF0 /* Calendar+.swift */; };
 		CE5A19A128FEE7040023FBF0 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A19A028FEE7040023FBF0 /* UITextField+.swift */; };
 		CE5A19A328FEE7AF0023FBF0 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A19A228FEE7AF0023FBF0 /* NotificationManager.swift */; };
+		CE86F3D2292CDB3D00351261 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86F3D1292CDB3D00351261 /* UIImageView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		CE5A199E28FEE6DB0023FBF0 /* Calendar+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+.swift"; sourceTree = "<group>"; };
 		CE5A19A028FEE7040023FBF0 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		CE5A19A228FEE7AF0023FBF0 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		CE86F3D1292CDB3D00351261 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				CE5A199C28FEE6AE0023FBF0 /* UIView+.swift */,
 				CE5A199E28FEE6DB0023FBF0 /* Calendar+.swift */,
 				CE5A19A028FEE7040023FBF0 /* UITextField+.swift */,
+				CE86F3D1292CDB3D00351261 /* UIImageView+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				CE5A199128FEE3390023FBF0 /* CustomTextField.swift in Sources */,
 				CE5A199728FEE5230023FBF0 /* AddNewBDayController.swift in Sources */,
 				CE5A197228F977B70023FBF0 /* AppDelegate.swift in Sources */,
+				CE86F3D2292CDB3D00351261 /* UIImageView+.swift in Sources */,
 				CE5A199928FEE5D40023FBF0 /* CoreDataManager.swift in Sources */,
 				CE5A199D28FEE6AE0023FBF0 /* UIView+.swift in Sources */,
 				CE5A197C28F977B70023FBF0 /* BirthdayCalendar.xcdatamodeld in Sources */,
