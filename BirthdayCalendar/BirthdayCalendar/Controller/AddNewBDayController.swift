@@ -11,7 +11,11 @@ final class AddNewBDayController: UIViewController {
     private let emojiStackView = UIStackView()
     private let scrollView = UIScrollView()
     private let contentView = UIView()
-    private var profileImage: UIImage?
+    private var profileImage: UIImageView? {
+        willSet {
+            profileImage?.dropShadow(radius: 0, opacity: 0)
+        }
+    }
     private let imagesArray: [UIImage] = [
         UIImage(named: "first.png")!,
         UIImage(named: "second.png")!,
@@ -132,12 +136,12 @@ final class AddNewBDayController: UIViewController {
         contentView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
         contentView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
         contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
+        contentView.centerYAnchor.constraint(equalTo: containerImagesView.centerYAnchor).isActive = true
         //emojiStackView
         emojiStackView.translatesAutoresizingMaskIntoConstraints = false
-        emojiStackView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
         emojiStackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
         emojiStackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
-        emojiStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+        emojiStackView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
     }
     
     private func setUpImageViews() {
@@ -149,7 +153,6 @@ final class AddNewBDayController: UIViewController {
             imageView.translatesAutoresizingMaskIntoConstraints = false
             imageView.heightAnchor.constraint(equalToConstant: 80).isActive = true
             imageView.widthAnchor.constraint(equalToConstant: 80).isActive = true
-            //imageView.centerYAnchor.constraint(equalTo: scrollView.centerYAnchor).isActive = true
             
             imageView.isUserInteractionEnabled = true
             imageView.addGestureRecognizer(tapRecognizer)
@@ -164,7 +167,7 @@ final class AddNewBDayController: UIViewController {
         let phoneNumber = phoneNumTextField.text
         let birthDate = birthDateTextField.birthDate
         let birthDateText = birthDateTextField.text
-        let personImage = profileImage
+        let personImage = profileImage?.image
         //addAlert
         let alert = UIAlertController(title: "Error!", message: nil, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { _ in
@@ -198,8 +201,8 @@ final class AddNewBDayController: UIViewController {
     
     @objc private func imageTapped(gestureRecognizer: UITapGestureRecognizer) {
         if let tappedImage = gestureRecognizer.view as? UIImageView {
-            tappedImage.dropShadow(radius: 5, opacity: 1)
-            profileImage = tappedImage.image
+            tappedImage.dropShadow(radius: 7, opacity: 1)
+            profileImage = tappedImage
         }
     }
 }
