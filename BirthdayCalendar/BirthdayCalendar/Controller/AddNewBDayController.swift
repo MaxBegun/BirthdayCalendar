@@ -16,12 +16,12 @@ final class AddNewBDayController: UIViewController {
             profileImage?.dropShadow(radius: 0, opacity: 0)
         }
     }
-    private let imagesArray: [UIImage] = [
-        UIImage(named: "first.png")!,
-        UIImage(named: "second.png")!,
-        UIImage(named: "third.png")!,
-        UIImage(named: "forth.png")!,
-        UIImage(named: "fifth.png")!,
+    private let imagesArray: [UIImage?] = [
+        UIImage(named: "first.png"),
+        UIImage(named: "second.png"),
+        UIImage(named: "third.png"),
+        UIImage(named: "forth.png"),
+        UIImage(named: "fifth.png"),
     ]
     // MARK: - Lifecycle
     override func viewDidLoad() {

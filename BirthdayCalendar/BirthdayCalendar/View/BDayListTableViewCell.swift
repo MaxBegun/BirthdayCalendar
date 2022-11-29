@@ -36,7 +36,6 @@ final class BDayListTableViewCell: UITableViewCell {
         self.selectionStyle = .none
         self.dropShadow(radius: 4, opacity: 0.4)
         contentView.layer.cornerRadius = 12
-        contentView.layer.masksToBounds = true
         contentView.layer.borderWidth = .zero
         contentView.backgroundColor = .white
         //nameLabel
@@ -45,7 +44,7 @@ final class BDayListTableViewCell: UITableViewCell {
         nameLabel.textColor = AppColor.itemColor
         //phoneNumberLabel
         phoneNumberLabel.textAlignment = .left
-        phoneNumberLabel.font = .systemFont(ofSize: 15, weight: .semibold)
+        phoneNumberLabel.font = .systemFont(ofSize: 13, weight: .semibold)
         phoneNumberLabel.textColor = .lightGray
         //willTurnsLabel
         willTurnsLabel.textAlignment = .right
@@ -57,7 +56,7 @@ final class BDayListTableViewCell: UITableViewCell {
         birthDateLabel.textColor = .lightGray
         //yearsOldLabel
         yearsOldLabel.textAlignment = .right
-        yearsOldLabel.font = .systemFont(ofSize: 20, weight: .semibold)
+        yearsOldLabel.font = .systemFont(ofSize: 18, weight: .semibold)
         yearsOldLabel.textColor = .lightGray
         yearsOldLabel.text = "Turns:"
         //personImageView
@@ -105,7 +104,7 @@ final class BDayListTableViewCell: UITableViewCell {
     
     private func setUpDateFormatter() {
         dateFormatter.dateStyle = .medium
-        dateFormatter.dateFormat = "dd MMM"
+        dateFormatter.dateFormat = "d MMMM"
     }
     //MARK: - API
     func setUpCell(_ model: Person) {
